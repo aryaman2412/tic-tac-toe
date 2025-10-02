@@ -47,7 +47,6 @@ const winPatterns=[
 
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
-        console.log("button was clicked");
         if(turn0){
             box.innerText="0";
             turn0=false;
@@ -76,6 +75,8 @@ const checkWinner = () =>{
             }
         }
     };
+
+    console.log("Its a draw");
 }
 
 newGameBtn.addEventListener("click",resetGame);
